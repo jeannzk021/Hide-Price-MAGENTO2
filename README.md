@@ -23,7 +23,8 @@ Esta extensão é usada para ocultar o preço na categoria e detalhes do produto
 ### Ativar extensão
 
 ```
-módulo php bin/magento: habilite Dangs_Hideprice
-php bin/magento configuração: atualização
-php bin/cache do magento:limpo
+php bin/magento module:enable Dangs_Hideprice
+php bin/magento setup:upgrade
+php bin/magento cache:clean
 php bin/magento setup:static-content:deploy
+```
